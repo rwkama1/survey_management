@@ -1,11 +1,11 @@
-const { DataCustomer } = require("./data/DataCustomer");
-const { DataCustomerResponses } = require("./data/DataCustomerResponses");
-const { DataQuestions } = require("./data/DataQuestions");
-const { DataSurvey } = require("./data/DataSurvey");
-const { DTOCustomerResponses } = require("./entity/DTOCustomerResponses");
-const { DTOSurvey } = require("./entity/DTOSurvey");
+// const { DataCustomer } = require("./data/DataCustomer");
+// const { DataCustomerResponses } = require("./data/DataCustomerResponses");
+// const { DataQuestions } = require("./data/DataQuestions");
+// const { DataSurvey } = require("./data/DataSurvey");
+// const { DTOCustomerResponses } = require("./entity/DTOCustomerResponses");
+// const { DTOSurvey } = require("./entity/DTOSurvey");
 
-//#region SURVEY
+// #region SURVEY
 
 
 
@@ -142,9 +142,9 @@ const { DTOSurvey } = require("./entity/DTOSurvey");
 
 
 
-//#endregion SURVEY
+// #endregion SURVEY
 
-//#region QUESTIONS
+// #region QUESTIONS
 
 // async function registerQuestions() {
 
@@ -203,20 +203,20 @@ const { DTOSurvey } = require("./entity/DTOSurvey");
 //   }
 //   getQuestionById().then()
   
-async function getQuestionUnanswered() {
+// async function getQuestionUnanswered() {
 
-  let getQuestionUnanswered =
-  await DataQuestions.getQuestionUnanswered();
+//   let getQuestionUnanswered =
+//   await DataQuestions.getQuestionUnanswered();
 
-  console.log(getQuestionUnanswered);
-}
-getQuestionUnanswered().then()
+//   console.log(getQuestionUnanswered);
+// }
+// getQuestionUnanswered().then()
 
 
 
-//#endregion QUESTIONS
+// #endregion QUESTIONS
 
-//#region CUSTOMER
+// #region CUSTOMER
 
 // async function registerCustomer() {
 
@@ -239,47 +239,47 @@ getQuestionUnanswered().then()
 //     }
 //     registerCustomer().then()
 
-    //    async function updateCustomerEmail() {
+//        async function updateCustomerEmail() {
 
-    //     let idcustomer = 5;
-    //     let PhoneCustomer = "emailupdate@gmail.com";
+//         let idcustomer = 5;
+//         let PhoneCustomer = "emailupdate@gmail.com";
 
-    //     let updateCustomerEmail =
-    //      await DataCustomer.updateCustomerEmail(idcustomer,PhoneCustomer);
-    //     if (updateCustomerEmail===-1) {
-    //         throw new
-    //          Error("The Customer does not exists");
-    //     }
-    //     if (updateCustomerEmail===-2) {
-    //         throw new
-    //         Error("Incorrect Email");
-    //     }
-    //     if (updateCustomerEmail===-3) {
-    //      throw new
-    //      Error("Email already exists in the system");
+//         let updateCustomerEmail =
+//          await DataCustomer.updateCustomerEmail(idcustomer,PhoneCustomer);
+//         if (updateCustomerEmail===-1) {
+//             throw new
+//              Error("The Customer does not exists");
+//         }
+//         if (updateCustomerEmail===-2) {
+//             throw new
+//             Error("Incorrect Email");
+//         }
+//         if (updateCustomerEmail===-3) {
+//          throw new
+//          Error("Email already exists in the system");
 
-    //     }
+//         }
 
-    //     console.log("Customer updated successfully");
-    // }
-    // updateCustomerEmail().then()
+//         console.log("Customer updated successfully");
+//     }
+//     updateCustomerEmail().then()
 
 
 
-    //   async function updateCustomerName() {
+//       async function updateCustomerName() {
 
-    //     let idcustomer = 1;
-    //     let customername = "CustomerUpdate";
+//         let idcustomer = 1;
+//         let customername = "CustomerUpdate";
 
-    //     let updateCustomerName =
-    //      await DataCustomer.updateCustomerName(idcustomer,customername);
-    //     if (updateCustomerName===-1) {
-    //         throw new
-    //          Error("The Customer does not exists");
-    //     }
-    //     console.log("Customer updated successfully");
-    // }
-    // updateCustomerName().then()
+//         let updateCustomerName =
+//          await DataCustomer.updateCustomerName(idcustomer,customername);
+//         if (updateCustomerName===-1) {
+//             throw new
+//              Error("The Customer does not exists");
+//         }
+//         console.log("Customer updated successfully");
+//     }
+//     updateCustomerName().then()
 
 
 
@@ -326,10 +326,10 @@ getQuestionUnanswered().then()
 
 
 
-//#endregion CUSTOMER
+// #endregion CUSTOMER
 
 
-//#region  CUSTOMER RESPONSE
+// #region  CUSTOMER RESPONSE
 
 // async function registerResponse() {
 
@@ -358,22 +358,22 @@ getQuestionUnanswered().then()
 
 
 
-  //     async function updateTextResponse() {
+//       async function updateTextResponse() {
 
       
-  // let ResponseID = 5;
-  // let ResponseText = "ResponseTextUpdate";
+//   let ResponseID = 5;
+//   let ResponseText = "ResponseTextUpdate";
  
 
-  //       let updateTextResponse =
-  //        await DataCustomerResponses.updateTextResponse(ResponseID,ResponseText);
-  //       if (updateTextResponse===-1) {
-  //           throw new
-  //            Error("The Response does not exists");
-  //       }
-  //       console.log("Response updated successfully");
-  //   }
-  //   updateTextResponse().then()
+//         let updateTextResponse =
+//          await DataCustomerResponses.updateTextResponse(ResponseID,ResponseText);
+//         if (updateTextResponse===-1) {
+//             throw new
+//              Error("The Response does not exists");
+//         }
+//         console.log("Response updated successfully");
+//     }
+//     updateTextResponse().then()
 
 
 // async function getResponseById() {
@@ -410,4 +410,4 @@ getQuestionUnanswered().then()
 //   getResponseByQuestion().then()
 
 
-//#endregion CUSTOMER RESPONSE
+// #endregion CUSTOMER RESPONSE
